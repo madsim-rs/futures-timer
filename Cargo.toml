@@ -16,12 +16,12 @@ Timeouts for futures.
 gloo-timers = { version = "0.2.0", features = ["futures"], optional = true }
 send_wrapper = { version = "0.4.0", optional = true }
 
+[target.'cfg(madsim)'.dependencies]
+madsim = "0.2"
+
 [dev-dependencies]
 async-std = { version = "1.0.1", features = ["attributes"] }
 futures = "0.3.1"
 
 [features]
-wasm-bindgen = [
-    "gloo-timers",
-    "send_wrapper"
-]
+wasm-bindgen = ["gloo-timers", "send_wrapper"]

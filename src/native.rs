@@ -1,5 +1,6 @@
 mod arc_list;
 mod atomic_waker;
+#[cfg_attr(madsim, path = "native/delay_sim.rs")]
 mod delay;
 mod global;
 mod heap;
